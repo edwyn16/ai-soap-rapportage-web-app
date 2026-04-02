@@ -98,11 +98,27 @@ The application is built using a modular architecture:
   - Approval flow
 
 ### Key Components
-- `ReportSectionCard`
-- `SoapOutputSectionCard`
-- `ApprovalFeedbackCard`
-- `ReportBottomActionBar`
-- `OutputActionsCard`
+
+- **ReportSectionCard**
+  - Displays individual SOAP sections in a structured and collapsible format
+  - Reused across report detail and approval flows
+  - Designed for quick scanning by care professionals
+
+- **SoapOutputSectionCard**
+  - Presents AI-generated output clearly separated per SOAP category
+  - Supports readability and fast validation of AI suggestions
+
+- **ApprovalFeedbackCard**
+  - Captures user feedback during the approval process
+  - Ensures the professional remains actively involved in validation
+
+- **OutputActionsCard**
+  - Centralizes decision-making actions (approve, reject, edit)
+  - Designed to be reusable across future AI-driven features
+
+- **ReportBottomActionBar**
+  - Fixed action bar optimized for mobile interaction
+  - Ensures key actions remain accessible at all times
 
 ### State Management
 - Local state using React hooks (`useState`, `useMemo`)
@@ -198,5 +214,7 @@ This project demonstrates:
 - Scalable component architecture
 The focus was on delivering a functional, inituitive, and realistic front-end prototype aligned with the Zorg Advies vision of reducing administrative workload in healthcare
 
-### Author
+---
+
+Author
 - Edwyn R. Jones
