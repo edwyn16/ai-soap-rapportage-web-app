@@ -1,50 +1,97 @@
-# Welcome to your Expo app 👋
+# AI SOAP Rapportage App (Mobile)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Overview
+This project is a mobile application prototype built as part of the Zorg Advies front-end assignment.
 
-## Get started
+The goal is to design and implement a user-friendly interface for care professionals that integrates with AI-driven workflows.  
+This app focuses on the **SOAP-reporting flow**, where a care professional reviews, adjusts, and approves AI-generated reports.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🎯 Objective
+To create an intuitive mobile experience that:
+- Reduces administrative workload
+- Supports fast, mobile-first usage
+- Enables clear interaction with AI-generated content
+- Provides a structured approval flow for professional validation
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 📱 Core Features
 
-In the output, you'll find options to open the app in a
+### 1. Client Overview
+- View client details
+- Access recent reports
+- Navigate into report details
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 2. Report Detail View
+- Overview of report information
+- Quick actions
+- Structured SOAP sections
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 3. AI Output View
+- AI-generated SOAP report
+- Confidence indicators
+- Reasoning transparency
+- Version history
+- Input source reference
 
-## Get a fresh project
+### 4. Approval Flow (Key Feature)
+- Dedicated approval screen
+- Editable SOAP sections
+- Feedback input for corrections
+- Actions:
+  - Save as draft
+  - Reject
+  - Approve & save
 
-When you're ready, run:
+👉 This reflects a real-world validation step where care professionals remain in control over AI output.
+
+---
+
+## 🧠 AI Integration (Simulated)
+The app uses mock data to simulate backend AI functionality.
+
+The expected backend capabilities:
+- Speech-to-text input
+- SOAP report generation
+- Confidence scoring
+- Clinical reasoning output
+- Version tracking
+
+---
+
+## 🏗️ Architecture
+
+### Component Structure
+- Modular and reusable components
+- Clear separation between:
+  - Reporting
+  - AI Output
+  - Approval
+
+### Routing
+- Dynamic routing using Expo Router
+- Structured navigation:
+
+### State Management
+- Local component state (React hooks)
+- Prepared for future backend integration
+
+---
+
+## 🛠️ Tech Stack
+
+- React Native (Expo)
+- TypeScript
+- Expo Router
+- Component-based architecture
+- Ionicons (UI icons)
+
+---
+
+## 🚀 Running the Project
 
 ```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+npm install
+npx expo start
